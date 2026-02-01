@@ -1,0 +1,86 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header{
+    padding-top:   33px;
+    padding-bottom: 33px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+
+
+    .principal_nav{
+        position: relative;
+        z-index: 2;
+        margin-left: 170px;
+        margin-right: 225px;
+        ul{
+
+        display: flex;
+        gap:56px;
+        list-style: none;
+
+        a{
+                font-family: $font-text-normal;
+                color:$color-buttom-text;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                padding: 8px 12px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        .iconheader{
+            display: flex;
+            gap:8px;
+            justify-content: center;
+            align-items: center;
+            a{
+            font-family: $font-text-more-sign-in;
+            }
+        }
+            
+      
+        }
+    }
+
+
+    .login{
+        margin-left: auto;
+        ul{
+            position:relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap:66px;
+        }
+        .iconcompra{
+            display: flex;
+            gap:32px;   
+        }
+
+        .registrarse{
+            display: flex;
+            align-items: center;
+            gap:32px;
+            .Nunito{
+                width: 56px;
+                font-family: $font-text-more-sign-in;
+                font-size: 18px;
+            }
+            .btn{
+                @include button();
+            }   
+        }
+
+
+
+
+
+                }
+            }
+        
+    

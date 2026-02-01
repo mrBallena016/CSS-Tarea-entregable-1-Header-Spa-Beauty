@@ -1,0 +1,195 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Esto hace que tanto html como body midan 100% del viewport
+
+html,body{
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+
+}
+
+body{
+  position:relative;
+  .container_all{
+    display: flex;
+    width: 1920px;
+    height: 820px;
+
+    .bg-right{
+      position:relative;
+      width: 635px;
+      height: 100%;
+      background-color: $backgorund-body-right;
+      
+      .img-bg-right{
+        position: absolute;
+        width: 472.5px;
+        height: 436.59px;
+        top:108px;
+        left: -100px;
+        background-image: url(../img/hoja_bg.svg);
+        opacity: 0.1;
+      }
+      .text-box{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        top:435px;
+        left:20px;
+        width: 545px;
+        height: 539px;
+        gap:65px;
+        z-index: 2;
+        &-1,&-2{
+          
+          width: 405px;
+          height: 247px;
+          border-radius: 16px;
+          padding: 8px;
+          background-color:rgba($backgorund-body-left,0.5) ;
+          backdrop-filter: blur(10px);
+          padding: 24px;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: $font-text-normal;
+          
+          h3{
+            font-weight: 700;
+            color: $color-buttom-text;
+          }
+          }
+          &-1{
+            align-self:flex-end ;
+          }
+         
+        
+      }
+      
+      
+    }
+    .container{
+      width: 1285px;
+      height: 100%;
+      background: $backgorund-body-left;
+      padding-left:50px ;
+
+      .hero{
+        h1{
+          font-family: $font-text-normal;
+          font-weight: 700;
+          font-size: 64px;
+          width: 809px;
+          height: 160px;
+          color: $color-buttom-text;
+          margin-bottom: 32px;
+          line-height: 80px;
+
+        }
+        &_subtitle{
+          font-family: $font-text-normal;
+          font-weight: 400;
+          font-size: 24px;
+          width: 760px;
+          height: 80px;
+          color: $color-buttom-subtitle;
+          margin-bottom: 56px;
+          line-height: 40px;
+        }
+        &_button{
+          width: 452px;
+          height: 60px;
+          margin-bottom: 90px;
+          display: flex;
+          gap: 32px;
+          .btn{
+            @include button();
+          }
+          .video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 16px;
+            .letter{
+              margin-bottom: 0;
+              font-size: 18px;
+              font-weight: 400;
+              font-family: $font-text-normal;
+              color:$color-buttom-text;
+
+            }
+            .icon{
+              height: 48px;
+              width: 48px;
+              background-color: white;
+              background-image: url(../img/play.svg);
+              background-position: center;
+              background-repeat:no-repeat;
+              border-radius: 50%;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+      }
+      .featured{
+        display: flex;
+        background-color: white;
+        gap: 72px;
+        width: 634px;
+        height: 284px;
+        article{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 145px;
+          height: 220px;
+          h2{
+            font-family: $font-text-normal;
+            font-size: 36px;
+            font-weight: 500;
+            color: $color-buttom-text;
+            margin-bottom: 16px;
+          }
+          p{
+            font-family: $font-text-normal;
+            font-size: 18px;
+            font-weight: 400;
+            color: $color-buttom-subtitle;
+            text-align: center;
+            
+          }
+
+
+
+
+          .bg-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            background-color:$backgorund-body-right;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+    }
+  }
+  &::before{
+      content: "";
+      position: absolute;
+      width: 1639px;
+      height: 1200px;
+      left:361px;
+      z-index:1;
+      background-image: url(../img/beauty-woman-skin-bg.png);
+      
+    }
+}
+

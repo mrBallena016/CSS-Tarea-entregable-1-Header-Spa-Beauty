@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+header .principal_nav {
+  position: relative;
+  z-index: 2;
+  margin-left: 170px;
+  margin-right: 225px;
+}
+header .principal_nav ul {
+  display: flex;
+  gap: 56px;
+  list-style: none;
+}
+header .principal_nav ul a {
+  font-family: "Poppins", sans-serif;
+  color: #264065;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+}
+header .principal_nav ul a:hover {
+  text-decoration: underline;
+}
+header .principal_nav ul .iconheader {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+header .principal_nav ul .iconheader a {
+  font-family: "Nunito Sans", sans-serif;
+}
+header .login {
+  margin-left: auto;
+}
+header .login ul {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 66px;
+}
+header .login .iconcompra {
+  display: flex;
+  gap: 32px;
+}
+header .login .registrarse {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header .login .registrarse .Nunito {
+  width: 56px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+header .login .registrarse .btn {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  background-color: #264065;
+  padding: 16.5px 46px 16.5px 46px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  border-radius: 32px;
+}
+header .login .registrarse .btn:hover {
+  background-color: black;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+body .container_all {
+  display: flex;
+  width: 1920px;
+  height: 820px;
+}
+body .container_all .bg-right {
+  position: relative;
+  width: 635px;
+  height: 100%;
+  background-color: #A9D6CB;
+}
+body .container_all .bg-right .img-bg-right {
+  position: absolute;
+  width: 472.5px;
+  height: 436.59px;
+  top: 108px;
+  left: -100px;
+  background-image: url(../img/hoja_bg.svg);
+  opacity: 0.1;
+}
+body .container_all .bg-right .text-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 435px;
+  left: 20px;
+  width: 545px;
+  height: 539px;
+  gap: 65px;
+  z-index: 2;
+}
+body .container_all .bg-right .text-box-1, body .container_all .bg-right .text-box-2 {
+  width: 405px;
+  height: 247px;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: rgba(250, 248, 245, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+body .container_all .bg-right .text-box-1 h3, body .container_all .bg-right .text-box-2 h3 {
+  font-weight: 700;
+  color: #264065;
+}
+body .container_all .bg-right .text-box-1 {
+  align-self: flex-end;
+}
+body .container_all .container {
+  width: 1285px;
+  height: 100%;
+  background: #FAF8F5;
+  padding-left: 50px;
+}
+body .container_all .container .hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  width: 809px;
+  height: 160px;
+  color: #264065;
+  margin-bottom: 32px;
+  line-height: 80px;
+}
+body .container_all .container .hero_subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  width: 760px;
+  height: 80px;
+  color: #909090;
+  margin-bottom: 56px;
+  line-height: 40px;
+}
+body .container_all .container .hero_button {
+  width: 452px;
+  height: 60px;
+  margin-bottom: 90px;
+  display: flex;
+  gap: 32px;
+}
+body .container_all .container .hero_button .btn {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  background-color: #264065;
+  padding: 16.5px 46px 16.5px 46px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  border-radius: 32px;
+}
+body .container_all .container .hero_button .btn:hover {
+  background-color: black;
+}
+body .container_all .container .hero_button .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+body .container_all .container .hero_button .video .letter {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #264065;
+}
+body .container_all .container .hero_button .video .icon {
+  height: 48px;
+  width: 48px;
+  background-color: white;
+  background-image: url(../img/play.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+body .container_all .container .featured {
+  display: flex;
+  background-color: white;
+  gap: 72px;
+  width: 634px;
+  height: 284px;
+}
+body .container_all .container .featured article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 220px;
+}
+body .container_all .container .featured article h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #264065;
+  margin-bottom: 16px;
+}
+body .container_all .container .featured article p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #909090;
+  text-align: center;
+}
+body .container_all .container .featured article .bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  background-color: #A9D6CB;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 1639px;
+  height: 1200px;
+  left: 361px;
+  z-index: 1;
+  background-image: url(../img/beauty-woman-skin-bg.png);
+}
+
+/*# sourceMappingURL=app.css.map */
